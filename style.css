@@ -1,0 +1,38 @@
+body {
+    text-align: center; /* 內容置中 */
+    font-family: "Microsoft JhengHei", sans-serif;
+    background-color: #f7f7f7;
+}
+
+#status {
+    margin: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* 設定棋盤排列方式 */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 三欄，每欄 100px */
+    grid-template-rows: repeat(3, 100px);    /* 三列，每列 100px */
+    gap: 10px;                               /* 格子間距 */
+    justify-content: center;                 /* 整體置中 */
+    margin-top: 20px;
+}
+
+/* 設定格子的外觀 */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #555;
+    font-size: 60px;          /* X 和 O 的大小 */
+    display: flex;            /* 讓文字垂直置中 */
+    align-items: center;      /* 讓文字垂直置中 */
+    justify-content: center;   /* 讓文字水平置中 */
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #e0e0e0; /* 滑鼠移上去變色 */
+}
